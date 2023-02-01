@@ -1,1 +1,44 @@
-<h1>Hello</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test</title>
+	<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<style>
+		input{
+			height:30px;
+			width:100px;
+			position: relative;
+			font-size: large;
+        	background-color: dodgerblue;
+        	border: none;
+        	cursor: pointer;
+        	text-align:center;
+        	font-family: 'Microsoft YaHei';
+        	font-size: 15px;
+        	transition: all 0.4s;
+        	color: white;
+		}
+	</style>
+	<img src="img/ali.gif" id="img" alt="" height="300px" width="300px">
+	<h3>这里有一只阿狸要送你一件礼物</h3>
+	<h3>你选择花还是棉花糖？</h3>
+	<br/>
+	<input type="button" value="花" onclick="button1_click()">
+	<input type="button" value="棉花糖" onclick="button2_click()">
+	<input type="button" value="重新选择" onclick="button3_click()">
+	<script type="text/javascript">
+		function button2_click(){
+			document.getElementById("img").src = "img/ali2.gif";
+		}
+		function button1_click(){
+			document.getElementById("img").src = "img/ali1.gif";
+		}
+				function button3_click(){
+			document.getElementById("img").src = "img/ali.gif";
+		}
+	</script>
+</body>
+</html>
